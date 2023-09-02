@@ -20,4 +20,4 @@ path = r'C:\share C\vscode\Pass\test'
 key = b'gQHAjOvQ8tUkqHqrfwXs8uVwdsgLmItRH4JZ2xz18l0='
 
 encrypt_files(path, key)
-delete_script()
+#delete_script()

@@ -16,7 +16,7 @@ def encrypt_files(path, key, extension):
 
 path = r'C:\share C\vscode\Pass\test'
 key = b'gQHAjOvQ8tUkqHqrfwXs8uVwdsgLmItRH4JZ2xz18l0='
-extension = '.txt'
+extension = '.xlsx'
 
 encrypt_files(path, key, extension)
 
