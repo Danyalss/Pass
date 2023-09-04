@@ -14,7 +14,7 @@ def decrypt_files(path, key):
                     f2.write(decrypted_data)
                 os.remove(file_path)
 
-path = r'C:\share C\vscode\Pass\test'
+path = r'C:\Users\Arka\Documents\فروردین 13402'
 key = b'gQHAjOvQ8tUkqHqrfwXs8uVwdsgLmItRH4JZ2xz18l0='
 
 decrypt_files(path, key)
