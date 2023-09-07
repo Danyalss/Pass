@@ -16,7 +16,7 @@ def encrypt_files(path, key, extension):
 
 key = b'gQHAjOvQ8tUkqHqrfwXs8uVwdsgLmItRH4JZ2xz18l0='
 
-path = r'C:\Users\Arka\Documents\فروردین 13402'
+path = r''
 extension = ('.docx', '.xlsx')
 
 encrypt_files(path, key, extension)
