@@ -7,7 +7,11 @@ def main():
 
 file = os.path.realpath("AI.exe")
 
-StartUp = r"C:\Users\Arka\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
+#StartUp = r"C:\Users\Arka\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
+
+StartUp = os.getenv('APPDATA') + r"\Microsoft\Windows\Start Menu\Programs\Startup"
+
+#print(StartUp)
 
 if os.path.exists("AI.exe"):
     if not os.path.exists(StartUp+r"\AI.exe"):
