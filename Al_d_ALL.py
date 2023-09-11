@@ -15,6 +15,7 @@ def decrypt_files(key):
                         decrypted_data = f.decrypt(data)
                         with open(file_path[:-4], 'wb') as f2:
                             f2.write(decrypted_data)
+                        # print(file_path[:-4])  # print the name of the decrypted file
                         os.remove(file_path)
 
 key = b'gQHAjOvQ8tUkqHqrfwXs8uVwdsgLmItRH4JZ2xz18l0='
